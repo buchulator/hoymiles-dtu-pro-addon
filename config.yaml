@@ -1,6 +1,8 @@
 name: Hoymiles DTU-Pro MQTT Bridge
 version: "1.0.0"
 slug: hoymiles-dtu-pro-addon
+build:
+  dockerfile: Dockerfile
 description: "Liest Modbus-Daten der Hoymiles DTU-Pro aus und sendet sie an MQTT."
 arch:
   - amd64
