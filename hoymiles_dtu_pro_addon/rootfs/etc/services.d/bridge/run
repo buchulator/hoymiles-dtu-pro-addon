@@ -1,2 +1,2 @@
-#!/usr/bin/with-contenv sh
-/run.sh
+#!/bin/sh
+exec /run.sh
