@@ -1,2 +1,2 @@
-#!/usr/bin/with-contenv sh
+#!/bin/sh
 python3 /app/bridge.py
