@@ -1,11 +1,6 @@
-FROM python:3.11-slim
+FROM ghcr.io/home-assistant/amd64-base:latest
 
-WORKDIR /app
-
-COPY bridge.py /app/bridge.py
 COPY run.sh /run.sh
-
 RUN chmod +x /run.sh
-RUN pip install pymodbus paho-mqtt
 
-CMD ["/run.sh"]
+CMD ["ls", "-l", "/"]
