@@ -1,6 +1,7 @@
-FROM ghcr.io/home-assistant/amd64-base:latest
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-CMD ["ls", "-l", "/"]
+COPY rootfs/ /
