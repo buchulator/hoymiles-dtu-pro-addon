@@ -6,6 +6,7 @@
   "startup": "services",
   "boot": "auto",
   "host_network": true,
+  "build": {},
   "options": {
     "dtu_host": "192.168.178.98",
     "dtu_port": 502,
