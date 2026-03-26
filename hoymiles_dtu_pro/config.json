@@ -1,1 +1,23 @@
-
+{
+  "name": "Hoymiles DTU-Pro Modbus MQTT Bridge",
+  "version": "1.0.0",
+  "slug": "hoymiles_dtu_pro",
+  "description": "Reads Hoymiles DTU-Pro (Modbus TCP) and publishes data to MQTT.",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "options": {
+    "dtu_host": "192.168.178.98",
+    "dtu_port": 502,
+    "mqtt_host": "core-mosquitto",
+    "mqtt_user": "",
+    "mqtt_password": ""
+  },
+  "schema": {
+    "dtu_host": "str",
+    "dtu_port": "int",
+    "mqtt_host": "str",
+    "mqtt_user": "str",
+    "mqtt_password": "str"
+  }
+}
